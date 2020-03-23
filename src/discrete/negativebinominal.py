@@ -1,29 +1,10 @@
-# ==================================================================== #
-# Relationalyze                                                        #
-# ==================================================================== #
-# Copyright (C) 2018  Markus Semmler                                   #
-#                                                                      #
-# This program is free software: you can redistribute it and/or modify #
-# it under the terms of the GNU General Public License as published by #
-# the Free Software Foundation, either version 3 of the License, or    #
-# (at your option) any later version.                                  #
-#                                                                      #
-# This program is distributed in the hope that it will be useful,      #
-# but WITHOUT ANY WARRANTY; without even the implied warranty of       #
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the        #
-# GNU General Public License for more details.                         #
-#                                                                      #
-# You should have received a copy of the GNU General Public License    #
-# along with this program. If not, see <http://www.gnu.org/licenses/>. #
-# ==================================================================== #
-
 import math as m
 import numpy as np
 
-from src.probs.distributions.marginals.prob_distribution import ProbDist
-from src.probs.distributions.continuous_uv.gamma import GammaDist
-from src.probs.distributions.discrete_uv.poisson import PoissonDist
-from src.probs.spaces.spaces1d_leafs import DiscreteSpace
+from src.continuous.gamma import GammaDist
+from src.discrete.poisson import PoissonDist
+from src.prob_distribution import ProbDist
+from src.spaces.spaces1d_leafs import DiscreteSpace
 
 
 class NegBinDist(ProbDist):

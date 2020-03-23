@@ -1,6 +1,10 @@
 import math as m
 import numpy as np
 
+from src.continuous.gamma import GammaDist
+from src.prob_distribution import ProbDist
+from src.spaces.spaces1d_leafs import ContinuousSpace
+
 
 class BetaDist(ProbDist):
     """Simple beta distribution."""
